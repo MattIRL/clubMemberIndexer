@@ -71,13 +71,13 @@
             Console.WriteLine($"Club Type: {club.ClubType}");
             Console.WriteLine($"Location: {club.ClubLocation}");
             Console.WriteLine($"Meetings: {club.MeetingDate}");
-            Console.WriteLine($"\nClub Members:");
+            Console.WriteLine($"\nClub Members:\n");
 
             for (int i = 0; i < Size; i++)
             {
                 if (!string.IsNullOrEmpty(club[i]))
                 {
-                    Console.WriteLine($"Member {i+1}: {club[i]}");
+                    Console.WriteLine(club[i]);
                 }
             }
         }
